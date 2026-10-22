@@ -1,4 +1,4 @@
-# Secure Baking Contest Web Application
+# Hardened Flask Web Application
 
 A secure Python Flask web application integrating SQLite, AES encryption, and Role-Based Access Control (RBAC) to safely manage user and baking contest data. 
 
