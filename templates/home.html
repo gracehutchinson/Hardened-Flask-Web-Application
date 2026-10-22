@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Baking Contest Home Page</title>
+   </head>
+   <body>
+      <h1>Welcome {{ name }}</h1>
+      
+      <a href="/myContestResults">Show my Contest Entry Results</a><br><br>
+
+      {% if sec_level == 3 %}
+      <a href="/enternew">Add new Baking Contest User</a><br><br>
+      {% endif %}
+
+      <a href="/addEntry">Add new Baking Contest Entry</a><br><br>
+
+      {% if sec_level >= 2 %}
+      <a href="/list">List Baking Contest Users</a><br><br>
+      {% endif %}
+
+      {% if sec_level == 3 %}
+      <a href="/contestResults">Baking Contest Entry Results</a><br><br>
+      {% endif %}
+
+      <a href="/logout">Log out</a>
+   </body>
+</html>

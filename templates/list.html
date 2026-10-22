@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+   <body>
+      <table border="1">
+         <thead>
+            <tr>
+               <th>Name</th>
+               <th>Age</th>
+               <th>Phone Number</th>
+               <th>Security Level</th>
+               <th>Login Password</th>
+            </tr>
+         </thead>
+         {% for row in rows %}
+            <tr>
+               <td>{{ row["name"] }}</td>
+               <td>{{ row["age"] }}</td>
+               <td>{{ row["phone"] }}</td>
+               <td>{{ row["security_level"] }}</td>
+               <td>{{ row["password"] }}</td>
+            </tr>
+         {% endfor %}
+      </table>
+      <br>
+      <a href="/">Go back to home page</a>
+   </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+   <body>
+      <table border="1">
+         <thead>
+            <tr>
+               <th>Entry Id</th>
+               <th>User Id</th>
+               <th>Name Of Baking Item</th>
+               <th>Number of Excellent Votes</th>
+               <th>Number of Ok Votes</th>
+               <th>Number of Bad Votes</th>
+            </tr>
+         </thead>
+         {% for row in rows %}
+            <tr>
+               <td>{{ row["entry_id"] }}</td>
+               <td>{{ row["user_id"] }}</td>
+               <td>{{ row["baking_item"] }}</td>
+               <td>{{ row["excellent_votes"] }}</td>
+               <td>{{ row["ok_votes"] }}</td>
+               <td>{{ row["bad_votes"] }}</td>
+            </tr>
+         {% endfor %}
+      </table>
+      <br>
+      <a href="/">Go back to home page</a>
+   </body>
+</html>

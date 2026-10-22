@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+   <body>
+      <h3>Baking Contest Results</h3>
+      <table border="1">
+         <thead>
+            <tr>
+               <th>Name Of Baking Item</th>
+               <th>Number of Excellent Votes</th>
+               <th>Number of Ok Votes</th>
+               <th>Number of Bad Votes</th>
+            </tr>
+         </thead>
+         {% for row in rows %}
+            <tr>
+               <td>{{ row["baking_item"] }}</td>
+               <td>{{ row["excellent_votes"] }}</td>
+               <td>{{ row["ok_votes"] }}</td>
+               <td>{{ row["bad_votes"] }}</td>
+            </tr>
+         {% endfor %}
+      </table>
+      <br>
+      <a href="/">Go back to home page</a><br>
+      <a href="/logout">Log out</a>
+   </body>
+</html>
